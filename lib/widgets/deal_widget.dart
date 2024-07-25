@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
 
-class Deal_Widget extends StatelessWidget {
-  const Deal_Widget({
+class DealWidget extends StatelessWidget {
+  const DealWidget({
     super.key,
     required this.screenHeight,
     required this.screenWidth,

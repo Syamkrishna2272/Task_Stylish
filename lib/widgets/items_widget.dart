@@ -1,10 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
-class Items_Widget extends StatelessWidget {
-  const Items_Widget({
+class ItemsWidget extends StatelessWidget {
+  const ItemsWidget({
     super.key,
     required this.screenHeight,
     required this.screenWidth,

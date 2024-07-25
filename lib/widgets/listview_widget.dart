@@ -1,10 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
-class Listview_Widget extends StatelessWidget {
-  const Listview_Widget({
+class ListviewWidget extends StatelessWidget {
+  const ListviewWidget({
     super.key,
     required this.screenHeight,
     required this.screenWidth,
@@ -20,31 +19,6 @@ class Listview_Widget extends StatelessWidget {
       height: screenHeight * 0.16,
       width: screenWidth * 0.9,
       color: Colors.white,
-      // child: ListView.builder(
-      //     scrollDirection: Axis.horizontal,
-      //     itemCount: 10,
-      //     itemBuilder: (context, index) {
-      //       return Padding(
-      //         padding: const EdgeInsets.all(8.0),
-      //         child: Column(
-      //           mainAxisSize: MainAxisSize.min,
-      //           children: [
-      //             CircleAvatar(
-      //                 maxRadius: screenHeight * 0.05,
-      //                 backgroundImage: NetworkImage(
-      //                     "https://firebasestorage.googleapis.com/v0/b/task1-6bc61.appspot.com/o/00000535.jpg?alt=media&token=e7ef4955-f6d2-424a-836e-a3d1c3372dd9")
-
-      //                 //  const AssetImage(
-      //                 //     'asset/images/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg'),
-      //                 ),
-      //             const SizedBox(
-      //               height: 4,
-      //             ),
-      //             Text("item $index")
-      //           ],
-      //         ),
-      //       );
-      //     }),
       child: FutureBuilder<List<Map<String, String>>>(
         future: fetchAllImagesAndTitles(),
         builder: (context, snapshot) {

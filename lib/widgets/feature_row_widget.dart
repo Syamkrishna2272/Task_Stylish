@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:task1/widgets/text_widget.dart';
 
-class feature_class extends StatelessWidget {
-  const feature_class({
+class Featureclass extends StatelessWidget {
+  const Featureclass({
     super.key,
     required this.screenHeight,
   });

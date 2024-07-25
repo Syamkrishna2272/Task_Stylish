@@ -1,8 +1,5 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
+  
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:task1/widgets/deal_widget.dart';
 import 'package:task1/widgets/feature_row_widget.dart';
 import 'package:task1/widgets/flat_heal_widget.dart';
@@ -77,28 +74,27 @@ class _HomeScreenState extends State<HomeScreen> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              search_container(
+              SearchContainer(
                   screenWidth: screenWidth, screenHeight: screenHeight),
               SizedBox(height: screenHeight * 0.01),
-              feature_class(screenHeight: screenHeight),
+              Featureclass(screenHeight: screenHeight),
               SizedBox(height: screenHeight / 35),
-              Listview_Widget(
+              ListviewWidget(
                   screenHeight: screenHeight, screenWidth: screenWidth),
-              Main_image_widget(
+              MainImageWidget(
                   screenHeight: screenHeight, screenWidth: screenWidth),
               SizedBox(height: screenHeight * 0.05),
-              Deal_Widget(screenHeight: screenHeight, screenWidth: screenWidth),
+              DealWidget(screenHeight: screenHeight, screenWidth: screenWidth),
               SizedBox(height: screenHeight * 0.05),
-              Grid_Widget(screenWidth: screenWidth, screenHeight: screenHeight),
-              Special_Offer_Widget(
+              GridWidget(screenWidth: screenWidth, screenHeight: screenHeight),
+              SpecialOfferWidget(
                   screenHeight: screenHeight, screenWidth: screenWidth),
               SizedBox(height: screenHeight / 100),
-              Flat_and_Heals_Widget(
+              FlatandHealsWidget(
                   screenHeight: screenHeight, screenWidth: screenWidth),
-              Trending_Widget(
+              TrendingWidget(
                   screenHeight: screenHeight, screenWidth: screenWidth),
-              Items_Widget(
-                  screenHeight: screenHeight, screenWidth: screenWidth),
+              ItemsWidget(screenHeight: screenHeight, screenWidth: screenWidth),
               Container(
                 height: screenHeight * 0.3,
                 width: screenWidth * 0.9,
@@ -109,9 +105,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.amber),
               ),
-              New_Arrival_WIdget(
+              NewArrivalWIdget(
                   screenHeight: screenHeight, screenWidth: screenWidth),
-              Sponserd_widget(screenWidth: screenWidth)
+              SponserdWidget(screenWidth: screenWidth)
             ],
           ),
         ),
@@ -138,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Align(
             alignment: Alignment.center,
             child: CircleAvatar(
-              radius: 35 ,
+              radius: 35,
               backgroundColor: Colors.white,
               child: Icon(Icons.shopping_cart_outlined),
             ),

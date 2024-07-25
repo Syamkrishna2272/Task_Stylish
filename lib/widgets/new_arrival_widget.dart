@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
-class New_Arrival_WIdget extends StatelessWidget {
-  const New_Arrival_WIdget({
+class NewArrivalWIdget extends StatelessWidget {
+  const NewArrivalWIdget({
     super.key,
     required this.screenHeight,
     required this.screenWidth,

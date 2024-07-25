@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class search_container extends StatelessWidget {
-  const search_container({
+class SearchContainer extends StatelessWidget {
+  const SearchContainer({
     super.key,
     required this.screenWidth,
     required this.screenHeight,

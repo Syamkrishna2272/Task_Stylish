@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
-class Main_image_widget extends StatelessWidget {
-   Main_image_widget({
+class MainImageWidget extends StatelessWidget {
+   MainImageWidget({
     super.key,
     required this.screenHeight,
     required this.screenWidth,
@@ -15,7 +15,7 @@ class Main_image_widget extends StatelessWidget {
       FirebaseFirestore.instance.collection('datas');
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return GestureDetector( 
       onTap: ()async {
       await  firedata.add({'name':'shyam'});
       },

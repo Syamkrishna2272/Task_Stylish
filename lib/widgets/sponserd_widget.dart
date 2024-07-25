@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
 
-class Sponserd_widget extends StatelessWidget {
-  const Sponserd_widget({
+class SponserdWidget extends StatelessWidget {
+  const SponserdWidget({
     super.key,
     required this.screenWidth,
   });

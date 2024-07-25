@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
-class Flat_and_Heals_Widget extends StatelessWidget {
-  const Flat_and_Heals_Widget({
+class FlatandHealsWidget extends StatelessWidget {
+  const FlatandHealsWidget({
     super.key,
     required this.screenHeight,
     required this.screenWidth,

@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:task1/widgets/text_widget.dart';
 
-class Grid_Widget extends StatelessWidget {
-  const Grid_Widget({
+class GridWidget extends StatelessWidget {
+  const GridWidget({
     super.key,
     required this.screenWidth,
     required this.screenHeight,
